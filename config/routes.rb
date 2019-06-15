@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'statique/accueil'
+  root 'statique#accueil'
 
   get 'statique/contact'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'statique/team'
 
-  root "application#premier"
+  get 'statique/services'
+
+
 end

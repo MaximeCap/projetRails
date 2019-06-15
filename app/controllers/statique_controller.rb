@@ -4,4 +4,12 @@ class StatiqueController < ApplicationController
 
   def contact
   end
+
+  def team
+
+  end
+
+  def services
+
+  end
 end
