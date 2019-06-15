@@ -10,6 +10,6 @@ class StatiqueController < ApplicationController
   end
 
   def services
-
+    
   end
 end
