@@ -2,9 +2,31 @@
 <html lang="en">
   <head>
       <title><%= yield(:title) %> | Tutoriel RoR Udemy </title>
+      <%= csrf_meta_tags %>
+      
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= link_to  image_tag("maBanner.jpg", alt: "logo"), '%' %>
+        <nav>
+          <ul>
+            <li><%= link_to  "Accueil", '%' %></li>
+            <li><%= link_to  "Services", '%' %></li>
+            <li><%= link_to  "Team", '%' %></li>
+            <li><%= link_to  "Contact", '%' %></li>
+          </ul>
+        </nav>
+    </header>
+    <section>
+        <%= yield %>
+    </section>
+    <footer>
+      <p>&copy; My Business 2019 - 2019. Tous droits réservés.</p>
+    </footer>
+
+    
   </body>
 </html>
