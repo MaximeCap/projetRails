@@ -9,25 +9,11 @@
   </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to  image_tag("maBanner.jpg", alt: "logo"), '%', class: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to  "Accueil", '%' %></li>
-            <li><%= link_to  "Services", '%' %></li>
-            <li><%= link_to  "Team", '%' %></li>
-            <li><%= link_to  "Contact", '%' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render "layouts/header" %>
     <section>
         <%= yield %>
     </section>
-    <footer>
-      <p>&copy; My Business 2019 - 2019. Tous droits réservés.</p>
-    </footer>
+    <%= render "layouts/footer" %>
 
     
   </body>
