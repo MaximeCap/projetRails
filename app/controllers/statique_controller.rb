@@ -6,10 +6,8 @@ class StatiqueController < ApplicationController
   end
 
   def team
-
   end
 
   def services
-    
   end
 end

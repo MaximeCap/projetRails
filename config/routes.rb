@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
+  get 'utilisateurs/new'
+
   root 'statique#accueil'
 
-  get 'statique/contact'
+  get '/contact', to: 'statique#contact'
 
-  get 'statique/team'
+  get '/team', to: 'statique#team'
 
-  get 'statique/services'
+  get '/services', to: 'statique#services'
 
+  get '/signup', to: 'utilisateurs#new'
 
 end
