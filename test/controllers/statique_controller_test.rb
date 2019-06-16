@@ -12,24 +12,20 @@ class StatiqueControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get contact" do
-    get statique_contact_url
+    get contact_url
     assert_response :success
     assert_select "title", "Contact | #{@baseTitle}"
-
   end
 
   test "should get team" do
-    get statique_team_url
+    get team_url
     assert_response :success
     assert_select "title", "Team | #{@baseTitle}"
-
   end
 
   test "should services team" do
-    get statique_services_url
+    get services_url
     assert_response :success
     assert_select "title", "Services | #{@baseTitle}"
-
-  end
-  
+  end  
 end

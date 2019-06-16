@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   root 'statique#accueil'
 
-  get 'statique/contact'
+  get '/contact', to: 'statique#contact'
 
-  get 'statique/team'
+  get '/team', to: 'statique#team'
 
-  get 'statique/services'
-
+  get '/services', to: 'statique#services'
 
 end
