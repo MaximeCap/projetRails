@@ -64,3 +64,18 @@ footer p {
     @include box-sizing;
 }
 
+/* Sidebar */
+
+aside {
+    section {
+        padding: 10px 0;
+        h1 {
+            font-size: 140%;
+        }
+    }
+}
+
+.gravatar {
+    float: left;
+    margin-right: 10px; 
+}
